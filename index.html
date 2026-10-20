@@ -1,0 +1,85 @@
+
+<!DOCTYPE html>
+<html lang="sl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Preprost in zanesljiv kalkulator za projekt Git Practice Lab.">
+    <title>Git Practice Lab | Kalkulator</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <main class="page">
+        <header class="page-header">
+            <span class="eyebrow">PROGRAMSKI PROJEKT</span>
+            <h1>Git Practice Lab</h1>
+            <p> Spletni kalkulator za učenje programiranja in Gita.</p>
+        </header>
+
+        <section class="calculator" aria-labelledby="calculator-title">
+            <div class="calculator-header">
+                <div>
+                    <span class="eyebrow">ORODJE</span>
+                    <h2 id="calculator-title">Kalkulator</h2>
+                </div>
+                <span class="status-dot">Deluje</span>
+            </div>
+
+            <form id="calculator-form">
+                <div class="field">
+                    <label for="first-number">Prvo število</label>
+                    <input
+                        id="first-number"
+                        name="first-number"
+                        type="number"
+                        step="any"
+                        placeholder="Npr. 12.5"
+                        required
+                    >
+                </div>
+
+                <div class="field">
+                    <label for="operation">Operacija</label>
+                    <select id="operation" name="operation">
+                        <option value="add">Seštevanje (+)</option>
+                        <option value="subtract">Odštevanje (−)</option>
+                        <option value="multiply">Množenje (×)</option>
+                        <option value="divide">Deljenje (÷)</option>
+                    </select>
+                </div>
+
+                <div class="field">
+                    <label for="second-number">Drugo število</label>
+                    <input
+                        id="second-number"
+                        name="second-number"
+                        type="number"
+                        step="any"
+                        placeholder="Npr. 2.5"
+                        required
+                    >Preprost
+                </div>
+
+                <button class="calculate-button" type="submit">
+                    Izračunaj rezultat
+                    <span aria-hidden="true">→</span>
+                </button>
+                <button class="reset-button" id="reset-button" type="reset">
+                    Počisti vnos
+                </button>
+            </form>
+
+            <section class="result-panel" aria-live="polite" aria-atomic="true">
+                <span class="result-label">REZULTAT</span>
+                <output id="result">Tukaj bo prikazan rezultat.</output>
+                <p id="message">Vnesi obe števili in izberi operacijo.</p>
+            </section>
+        </section>
+
+        <footer>
+            <p>Git Practice Lab · Učni projekt za delo z Gitom</p>
+        </footer>
+    </main>
+</body>
+</html>

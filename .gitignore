@@ -1,0 +1,18 @@
+
+# Datoteke operacijskega sistema Windows
+Thumbs.db
+Desktop.ini
+
+# Urejevalniki kode
+.vscode/
+
+# Dnevniške datoteke
+*.log
+
+# Začasne datoteke
+*.tmp
+
+# Lokalne okoljske nastavitve in skrivnosti
+.env
+.env.*
+!.env.example
